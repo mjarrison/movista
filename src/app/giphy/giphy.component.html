@@ -1,0 +1,9 @@
+<div>
+    <input name='search' id='search' placeholder='search...' [(ngModel)]="query" (change)="submitQuery()">
+    <div id="results_panel">
+        <a href="{{ gif.url }}" class="gif_card" *ngFor="let gif of gifs">
+            <img src="{{ gif.images.fixed_width.url }}">
+            <div class="title">{{ gif.title }}</div>
+        </a>
+    </div>
+</div>

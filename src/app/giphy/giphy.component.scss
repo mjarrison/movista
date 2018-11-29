@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,600');
+
+input {
+  padding: 15px;
+  font-size: 14px;
+  letter-spacing: .1rem;
+  margin-right: 0.5rem;
+  text-align: center;
+}
+
+#results_panel {
+  margin: 1em auto;
+  width: 800px;
+}
+
+.gif_card {
+  display: inline-block;
+  padding: 1em;
+  margin-bottom: 1em;
+  max-width: 266px;
+  text-decoration: none;
+  color: #636b6f;
+  animation: fadein 1.5s;
+
+  img {
+    object-fit: contain;
+  }
+
+  .title {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
